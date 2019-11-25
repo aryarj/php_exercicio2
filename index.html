@@ -1,0 +1,37 @@
+<doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Entendendo o HTML5</title>
+        <meta name="keywords" content="HTML5, form, input, frontend"/>
+        <meta name="description" content="como programar o HTML5"/>
+        <meta name="author" content="Ary de Araújo odrigues Júnior"/>
+        <meta name="robots" content="index,follow"/>
+     </head>
+     <body>
+        <figure>
+            <img align="top" src="imagens\senai.png" title="SENAI - CTM" width="450", height="150">
+        </figure>
+        <hr>
+        <nav>
+            <a href="index.html" style="text-decoration:none">Home</a>
+        </nav>
+        <hr>
+        <section>
+            <form action="verifica.php" target="_self" method="POST" autocomplete="on">
+                <fieldset>
+                <legend>Pedido de peça</legend>
+                <label>Peça N°</label>
+                <input type="text" name="peca" requeried pattern="[A-Z]{3}[0-9]{4}" title="O código da peça consiste de 3 letras maiusculas, seguidas de 4 números"/><br><br>
+                <label>Nome</label>
+                <input type="text" name="nome" requeried placeholder="Digite o seu nome. EX: João"/><br><br>
+                <label>Data</label>
+                <input type="date" name="data" requeried/><br><br>
+                <label>e-mail</label>
+                <input type="email" name="email" requeried/><br><br>
+                <button type="submit">Gravar</button>
+                </fieldset>
+            </form>
+        </section>
+     </body>
+</html>

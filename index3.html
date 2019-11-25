@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aula HTML5 - Novo Form</title>
+        <meta name="keywords" content="HTML5, form, input, frontend"/>
+        <meta name="description" content="como programar um form em HTML5"/>
+        <meta name="author" content="Ary de Araújo Rodrigues Júnior"/>
+        <meta name="robots" content="index,follow"/>
+    </head>
+    <body>
+        <table border="0" width="100%">
+            |<tr>
+                <td align="left">
+                    <figure>
+                        <img src="imagens\senai.png" title="SENAI - CTM" width="350", height="50">
+                    </figure>
+                </td>
+                <td align="right">
+                    <figure>
+                        <img src="imagens\logohtml15.png" title="HTML5" width="350", height="50">
+                    </figure>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <nav>
+            <a href="index3.html" style="text-decoration:none">Home</a>
+            <br>
+            <!--Para ver sua compra, clique <a href="#">aqui</a>-->
+        </nav>
+        <hr>
+        <section>
+            <br>
+            <h1>Cadastro de veículos Chingling</h1>
+            <br>
+            <form action="verifica3.php" target="_self" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        Chingling Veículos
+                    </legend>
+                    <label>Condutor</label>
+                    <input type="text" name="nome" requeried placeholder="Digite o nome do condutor" size=55><br><br>
+                    <label>Carro</label>
+                    <input type="text" name="carro" requeried placeholder="Digite o nome do carro" size=55><br><br>
+                    <label>Ano de fabricação</label>
+                    <input type="date" name="data" requeried><br><br>
+                    <label>Marca do carro</label>
+                    <select name="marca">
+                        <option value="Outros">Outros</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Volks Wagen">Volks Wagen</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Toyota">Toyota</option>
+                    </select><br><br>
+                    <label>Cor do carro</label>
+                    <input type="color" requeried name="cor"><br><br>
+                    <label>Características do carro</label><br>
+                    <textarea name="caracteristica" cols="40" rows="5" maxlength="200"></textarea><br>
+                    <label><input type="checkbox" value="veridico" required name="validar">Eu garanto que as informações são verdadeiras</label><br><br>
+                    <button type="submit">Gravar</button>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

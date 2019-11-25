@@ -1,0 +1,41 @@
+<doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Entendendo o HTML5</title>
+        <meta name="keywords" content="HTML5, form, input, frontend"/>
+        <meta name="description" content="como programar o HTML5"/>
+        <meta name="author" content="Ary de Araújo Rodrigues Júnior"/>
+        <meta name="robots" content="index,follow"/>
+     </head>
+     <body>
+        <figure>
+            <img align="top" src="imagens\senai.png" title="SENAI - CTM" width="450", height="150">
+        </figure>
+        <hr>
+        <nav>
+            <a href="index.html" style="text-decoration:none">Home</a>
+        </nav>
+        <hr>
+        <section>
+            <form action="verifica2.php" target="_self" method="POST" autocomplete="on">
+                <fieldset>
+                <legend>Cadastro</legend>
+                <label>Nome</label>
+                <input type="text" name="nome" requeried placeholder="Digite o seu nome. EX: João"/><br><br>
+                
+                <label>Celular</label>
+                <input type="text" name="celular" requeried pattern="[0-9]{2}[0-9]{9}" title="O número do celular deve conter o DDD e o número, total de 11 digitos"/><br><br>
+                
+                <label>e-mail</label>
+                <input type="email" name="email" requeried/><br><br>
+                
+                <label>Data de nascimento</label>
+                <input type="date" name="data" requeried/><br><br>
+                
+                <button type="submit">Gravar</button>
+                </fieldset>
+            </form>
+        </section>
+     </body>
+</html>

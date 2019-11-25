@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aula HTML5 - Novo Form</title>
+        <meta name="keywords" content="HTML5, form, input, frontend"/>
+        <meta name="description" content="como programar um form em HTML5"/>
+        <meta name="author" content="Ary de Araújo Rodrigues Júnior"/>
+        <meta name="robots" content="index,follow"/>
+    </head>
+    <body>
+        <table border="0" width="100%">
+            |<tr>
+                <td align="left">
+                    <figure>
+                        <img src="imagens\senai.png" title="SENAI - CTM" width="350", height="50">
+                    </figure>
+                </td>
+                <td align="right">
+                    <figure>
+                        <img src="imagens\logohtml15.png" title="HTML5" width="350", height="50">
+                    </figure>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <nav>
+            <a href="index4.html" style="text-decoration:none">Home</a>
+            <br>
+            <!--Para ver sua compra, clique <a href="#">aqui</a>-->
+        </nav>
+        <hr>
+        <section>
+            <br>
+            <h1>Cadastro de Usuário</h1>
+            <br>
+            <form action="verifica4.php" target="_self" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        Bar do Bebum
+                    </legend>
+                    <label>Nome</label>
+                    <input type="text" name="nome" requeried placeholder="Digite o seu primeiro nome" size=25><br><br>
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" requeried placeholder="Digite o seu sobrenome" size=55><br><br>
+                    <label>Sexo</label>
+                    <select name="sexo">
+                        <option value="outros">Não desejo informar</option>
+                        <option value="feminino">Feminíno</option>
+                        <option value="masculinio">Masculino</option>
+                    </select><br><br>
+                    <label>Data de aniversário</label>
+                    <input type="date" name="data" requeried><br><br>
+                    <label>Qual sua bebida favorita?</label>
+                    <select name="bebida">
+                        <option value="cerveja">Cerveja</option>
+                        <option value="whisk">Whisk</option>
+                        <option value="vodka">Vodka</option>
+                        <option value="run">Run</option>
+                        <option value="batidas">Batidas em geral</option>
+                        <option value="outras">Outras</option>
+                        <option value="nalcool">Não alcoolica</option>
+                    </select><br><br>
+                    <label>Caso tenha digitado "Outras" na escolha da bebida, por favor, especifique qual no quadro a seguir</label><br><br>
+                    <input type="text" name="outras2" requeried placeholder="especifique aqui, sua bebida favorita" size=50><br><br>
+                    <label>Telefone</label>
+                    <input type="text" name="telfixo" requeried pattern="[0-9]{2}[0-9]{8}" title="O número do telefone deve conter o DDD e o número, total de 10 digitos"/><br><br>
+                    <label>Celular</label>
+                    <input type="text" name="celular" requeried pattern="[0-9]{2}[0-9]{9}" title="O número do celular deve conter o DDD e o número, total de 11 digitos"/><br><br>
+                    <label>Cidade em que mora</label>
+                    <input type="text" name="cidade" requeried placeholder="Digite a cidade em que mora" size=55><br><br>
+                    <label>Quantas vezes frequenta um bar durante a semana?</label>
+                    <select name="freq">
+                        <option value="um">1 a 2 vezes por semana</option>
+                        <option value="dois">2 a 3 vezes por semana</option>
+                        <option value="tres">3 a 4 vezes por semana</option>
+                        <option value="quatro">4 a 5 vezes por semana</option>
+                        <option value="cinco">6 a 7 vezes por semana</option>
+                        <option value="sabado">Somete aos sábados</option>
+                        <option value="sabado">Somete aos domingos</option>
+                        <option value="sabado">Somete no final de semana</option>
+                    </select><br><br>
+                    <label>Você gosta de música ao vivo no bar?</label>
+                    <select name="musica">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                        <option value="indif">Indiferente</option>
+                        
+                    </select><br><br>
+                    <label>Digite aqui criticas, sujestões e observações que desejar</label><br>
+                    <textarea name="observacao" cols="40" rows="5" maxlength="200"></textarea><br>
+                    <button type="submit">Gravar</button>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
